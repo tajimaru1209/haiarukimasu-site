@@ -1,0 +1,45 @@
+:root {
+  --bg: #F4EFE4;
+  --surface: #FCF9F2;
+  --text: #2B2622;
+  --soft: #736960;
+  --accent: #C8452C;
+  --moss: #5E7A4A;
+  --line: rgba(43, 38, 34, 0.12);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", serif;
+  font-size: 17px; line-height: 1.9;
+}
+.wrap { max-width: 680px; margin: 0 auto; padding: 48px 16px 72px; }
+a { color: var(--accent); text-underline-offset: 4px; }
+.hero { display: flex; align-items: center; gap: 18px; }
+.hero img { width: 88px; height: 88px; border-radius: 22px; box-shadow: 0 10px 26px rgba(80, 50, 20, .22); }
+.eyebrow { font-size: 13px; letter-spacing: 3px; color: var(--soft); }
+h1 { font-size: 30px; line-height: 1.35; margin: 4px 0 0; font-weight: 600; letter-spacing: 1px; }
+h2 { font-size: 22px; margin: 48px 0 12px; font-weight: 600; letter-spacing: 1px; }
+h3 { font-size: 18px; margin: 26px 0 8px; font-weight: 600; }
+.lead { font-size: 18px; color: var(--soft); margin: 22px 0 0; }
+.reply { display: inline-block; margin: 24px 0 0; padding: 14px 22px; background: var(--surface); border: 1.2px solid var(--text); border-radius: 18px; font-size: 20px; }
+.diary { margin: 22px 0 0; padding: 4px 20px; background: var(--surface); border-radius: 16px; border: 1px solid var(--line); }
+.diary p { margin: 14px 0; font-size: 15px; }
+.diary time { display: block; font-size: 12px; color: var(--soft); font-family: -apple-system, sans-serif; }
+.badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.badges span { font-size: 14px; border: 1px solid var(--accent); color: var(--accent); border-radius: 6px; padding: 1px 12px; }
+.jump { margin-top: 20px; color: var(--soft); }
+.card { background: var(--surface); border-radius: 16px; padding: 16px 20px; margin: 14px 0 20px; border: 1px solid var(--line); }
+.card p { margin: 0; }
+.label { font-size: 13px; color: var(--soft); }
+.value { font-size: 18px; word-break: break-all; }
+ol.steps { padding-left: 1.4em; margin: 0; }
+ol.steps li { margin-bottom: 12px; }
+ul.features { padding-left: 1.2em; margin: 0; }
+ul.features li { margin-bottom: 10px; }
+.faq p { margin: 0 0 20px; }
+.updated { color: var(--soft); margin-top: 6px; }
+#privacy { margin-top: 64px; padding-top: 8px; border-top: 1px solid var(--line); }
+footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--soft); font-size: 14px; }
+@media (max-width: 480px) { h1 { font-size: 24px; } .hero img { width: 70px; height: 70px; } .reply { font-size: 18px; } }
